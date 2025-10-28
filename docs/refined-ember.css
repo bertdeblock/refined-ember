@@ -66,6 +66,7 @@
 
 .attribute,
 .parameter,
+.prop,
 .return {
   display: table-row;
 }
