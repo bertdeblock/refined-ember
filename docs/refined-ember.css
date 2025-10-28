@@ -121,6 +121,10 @@
   font-weight: bold;
 }
 
+.field-since::before {
+  content: "✅";
+}
+
 .github-link::before {
   content: "🐙";
 }
