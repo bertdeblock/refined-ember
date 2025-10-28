@@ -31,6 +31,19 @@
   top: 0;
 }
 
+.sub-table-of-contents .toc-item > a {
+  border-left: 4px solid transparent;
+}
+
+.sub-table-of-contents .toc-item > a:hover {
+  border-color: var(--color-gray-400);
+}
+
+.sub-table-of-contents .toc-item > a.active,
+.sub-table-of-contents .toc-item.selected > a {
+  border-color: var(--color-brand-hc-dark);
+}
+
 /**
  * Main Content
  */
@@ -84,8 +97,4 @@
 
 .attributes {
   margin-bottom: var(--spacing-2);
-}
-
-.attribute-label {
-  font-weight: bold;
 }
