@@ -25,10 +25,16 @@
 
 .es-sidebar,
 .on-this-page-wrapper {
+  box-sizing: border-box;
   height: calc(100vh);
   overflow: auto;
   position: sticky;
   top: 0;
+}
+
+.on-this-page-wrapper {
+  background-color: var(--color-gray-200);
+  padding: var(--spacing-2);
 }
 
 .sub-table-of-contents .toc-item > a {
@@ -95,10 +101,21 @@
   padding: var(--spacing-1);
 }
 
+.parameter dd div:empty::before,
+.return dd div:empty::before {
+  color: var(--color-gray-600);
+  content: "/";
+  font-style: italic;
+}
+
 .attributes {
   margin-bottom: var(--spacing-2);
 }
 
 .attribute-label {
   font-weight: bold;
+}
+
+.github-link::before {
+  content: "🐙";
 }
