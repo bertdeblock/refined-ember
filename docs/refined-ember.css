@@ -1,0 +1,86 @@
+/**
+ * Scrollbars
+ */
+
+::-webkit-scrollbar {
+  height: var(--spacing-1);
+  width: var(--spacing-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-300);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/**
+ * Sidebars
+ */
+
+.sidebar-container {
+  --sidebar-width: auto;
+}
+
+.es-sidebar,
+.on-this-page-wrapper {
+  height: calc(100vh);
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+/**
+ * Main Content
+ */
+
+.chapter {
+  max-width: 80ch;
+}
+
+.class-field-description {
+  border: 1px solid var(--color-gray-300);
+  padding: 1rem;
+}
+
+.class-field-description--header {
+  background-color: var(--color-gray-200);
+  border-bottom: 1px solid var(--color-gray-300);
+  margin: -1rem -1rem var(--spacing-2);
+  padding: var(--spacing-2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/**
+ * Tables
+ */
+
+.attributes,
+.parameters {
+  border-collapse: collapse;
+  display: table;
+}
+
+.attribute,
+.parameter,
+.return {
+  display: table-row;
+}
+
+.attribute-label,
+.attribute-value,
+.parameter dd,
+.parameter dt,
+.return dd,
+.return dt {
+  border: 1px solid var(--color-gray-300);
+  display: table-cell;
+  padding: var(--spacing-1);
+}
+
+.attributes {
+  margin-bottom: var(--spacing-2);
+}
