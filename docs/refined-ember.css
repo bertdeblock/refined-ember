@@ -98,3 +98,7 @@
 .attributes {
   margin-bottom: var(--spacing-2);
 }
+
+.attribute-label {
+  font-weight: bold;
+}
